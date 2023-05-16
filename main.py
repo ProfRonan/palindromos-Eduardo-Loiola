@@ -1,6 +1,3 @@
-"""Main functions"""
-
-
 def is_palindrome(string: str) -> bool:
-    """Check if string is palindrome."""
-    return False
+    limpa_string = string.lower().replace(" ","").replace(".","").replace(",","").replace("!","")
+    return limpa_string == limpa_string[::-1]
